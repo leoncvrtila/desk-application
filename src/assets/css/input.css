@@ -1,0 +1,767 @@
+@charset "UTF-8";
+/*-----------------RESPONSIVE*/
+/*-----------------INPUT*/
+.btn, .formButtons label, .submitBtn {
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  color: black;
+  padding-top: 9px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #a0a0a0;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: medium;
+}
+
+.input, .InputElement, .InputSearch, .InputElementNew {
+  border: 0px;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: medium;
+  width: 400px;
+  font-size: 14px;
+}
+
+.chooseImg, .chooseFile, .chooseInterest {
+  border: 1px solid #656565;
+  border-radius: 50px;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .chooseImg, .chooseFile, .chooseInterest {
+    width: 40%;
+    margin-bottom: 2%;
+  }
+}
+
+.formWrap {
+  background: #f6f7f9;
+  font-family: sans-serif;
+}
+
+.formWrap h1 {
+  text-align: -webkit-center;
+  padding-top: 5%;
+  font-size: xx-large;
+  color: #a7946c;
+}
+
+@media only screen and (max-width: 320px) {
+  .formWrap h1 {
+    padding-top: 10%;
+    padding-bottom: 3%;
+    font-size: x-large;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .formWrap h1 {
+    font-size: xx-large;
+  }
+}
+
+.formWrap h2, .formWrap p {
+  text-align: center;
+  margin-top: 1%;
+}
+
+@media only screen and (max-width: 320px) {
+  .formWrap h2, .formWrap p {
+    padding-top: 2%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .formWrap h2 {
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .formWrap p {
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .formWrap p {
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+  }
+}
+
+form {
+  width: 60%;
+  padding: 10px;
+  border: 3px solid #c3ab7d;
+  -webkit-box-shadow: 0px 1px 1px 0px #afafaf;
+          box-shadow: 0px 1px 1px 0px #afafaf;
+  margin: 5%;
+  background: white;
+}
+
+@media only screen and (max-width: 320px) {
+  form {
+    width: 92%;
+    margin: 5%;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  form {
+    width: 94%;
+    margin: 5%;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  form {
+    width: 80%;
+  }
+}
+
+form h4 {
+  margin-top: 10%;
+  margin-bottom: 2%;
+  text-align: left;
+  font-weight: 400;
+  color: #313131;
+}
+
+@media only screen and (max-width: 320px) {
+  form h4 {
+    margin-top: 15%;
+    width: 280px;
+  }
+}
+
+form h4::before {
+  content: '◥ ';
+}
+
+form h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+
+form img {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  form img {
+    margin-top: 4%;
+  }
+}
+
+form input[type=file] {
+  display: none;
+}
+
+.chooseInterest {
+  width: 15%;
+}
+
+.chooseImg:hover, .chooseFile:hover, .chooseInterest:hover {
+  background: #4f575f;
+  color: white;
+}
+
+.Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: sans-serif;
+}
+
+.fieldOfInterest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+.Input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 320px) {
+  .InputElement {
+    width: 240px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .InputElement {
+    width: 285px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .InputElement {
+    width: 400px;
+  }
+}
+
+.InputElement:focus, .InputSearch:focus {
+  outline: none;
+}
+
+.InputSearch {
+  max-height: 25px;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .InputSearch {
+    width: 93%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .InputSearch {
+    width: 97%;
+  }
+}
+
+.formBtns {
+  width: 425px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2%;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .formBtns {
+    width: 303px;
+    margin-bottom: 20px;
+  }
+}
+
+.formButtons {
+  margin-top: 15px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.formButtons label {
+  padding: 15px;
+}
+
+input[type=radio]:checked + label {
+  background: #343a40;
+  color: white;
+}
+
+.formButtons label:hover {
+  background: #efefef;
+}
+
+.btnsTittle {
+  text-align: left;
+}
+
+@media only screen and (max-width: 320px) {
+  .btnsTittle {
+    text-align: left;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .btnsTittle {
+    text-align: left;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+}
+
+.submitBtn {
+  padding-top: 0px;
+  background: #343a40;
+  color: white;
+  height: 40px;
+  margin-left: 45%;
+  margin-top: 10%;
+}
+
+@media only screen and (max-width: 320px) {
+  .submitBtn {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .submitBtn {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .submitBtn {
+    margin-left: 35%;
+  }
+}
+
+.submitBtn:hover {
+  background: #4f575f;
+}
+
+.errorModal {
+  position: fixed;
+  height: 90px;
+  width: 250px;
+  border: 1px solid red;
+  background: white;
+  border-radius: 0;
+  left: 15px;
+  bottom: 20px;
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 2;
+  -webkit-box-shadow: 0px 1px 1px 0px #dedede;
+          box-shadow: 0px 1px 1px 0px #dedede;
+}
+
+.errorModal:hover {
+  background: #961717;
+  cursor: pointer;
+}
+
+.errorModal span:nth-of-type(2) {
+  font-size: x-large;
+  font-family: cursive;
+  top: -10px;
+  position: absolute;
+  right: 8px;
+}
+
+.currentStatus {
+  padding: 8px;
+  width: 15%;
+  text-align: center;
+  background: #c3ab7d;
+  color: white;
+  cursor: pointer;
+  margin: auto;
+  -webkit-animation: 0.5s;
+          animation: 0.5s;
+  margin-top: 1.5%;
+}
+
+@media only screen and (max-width: 320px) {
+  .currentStatus {
+    width: 65%;
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .currentStatus {
+    width: 65%;
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .currentStatus {
+    width: 45%;
+  }
+}
+
+.currentStatus:hover {
+  background: #b99d67;
+}
+
+.currentSituation {
+  padding: 15px;
+  width: 35%;
+  text-align: center;
+  background: #c3ab7d;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-animation: 0.5s;
+          animation: 0.5s;
+  margin: auto;
+  margin-top: 1.5%;
+}
+
+@media only screen and (max-width: 320px) {
+  .currentSituation {
+    width: 80%;
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .currentSituation {
+    width: 85%;
+    margin-top: 4%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .currentSituation {
+    width: 60%;
+  }
+}
+
+.currentSituation:hover {
+  background: #b99d67;
+}
+
+.InputElementNew {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 320px) {
+  .InputElementNew {
+    width: 250px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .InputElementNew {
+    width: 285px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .InputElementNew {
+    width: 400px;
+  }
+}
+
+.InputElementNew:focus {
+  outline: none;
+}
+
+form p {
+  margin-top: 5%;
+  margin-bottom: 1.5%;
+  text-align: center;
+}
+
+.btnsWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 320px) {
+  .btnsWrap {
+    margin-top: 10%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .btnsWrap {
+    margin-top: 10%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.btnsWrap div {
+  margin-left: 0;
+}
+
+.titleDes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 2px solid #c3ab7d;
+  width: 65%;
+  margin: auto;
+  padding-bottom: 10px;
+  margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 320px) {
+  .titleDes {
+    width: 85%;
+    margin-bottom: 12%;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .titleDes {
+    width: 85%;
+    margin-bottom: 12%;
+    margin-top: 10%;
+  }
+}
+
+.titleDes h3 {
+  text-transform: uppercase;
+  color: #4e4e4e;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 320px) {
+  .titleDes h3 {
+    font-size: 17px;
+  }
+}
+
+.h4q {
+  width: 425px;
+  margin: auto;
+  margin-bottom: 0%;
+  margin-top: 12%;
+}
+
+@media only screen and (max-width: 320px) {
+  .h4q {
+    width: 65%;
+    margin: 0;
+    margin-top: 15%;
+    margin-bottom: 6%;
+    margin-left: 3%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .h4q {
+    width: 70%;
+    margin: 0;
+    margin-top: 15%;
+    margin-bottom: 6%;
+    margin-left: 3%;
+  }
+}
+
+.currentSituationDiv {
+  width: 400px;
+  margin: auto;
+}
+
+.currentSituationDivError {
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  background: #de5959;
+  color: white;
+  text-align: center;
+  width: 35%;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .formWrap {
+    width: 90%;
+    margin: auto;
+    overflow-x: hidden;
+  }
+}
+
+.cautionError {
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 5px;
+  background: #de5959;
+  color: white;
+  text-align: center;
+  width: 35%;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .cautionError {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .formBtnsWrap {
+    width: 303px;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .formBtnsWrap div:nth-child(3) {
+    margin-left: 5%;
+    width: 53%;
+  }
+}
+
+.privacy {
+  padding: 10px;
+  background: #dedede;
+  width: 20%;
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 320px) {
+  .privacy {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .privacy {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .privacy {
+    width: 28%;
+  }
+}
+
+.inputWrapp {
+  width: 430px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputWrapp h4 {
+  width: 400px;
+}
+
+@media only screen and (max-width: 320px) {
+  .inputWrapp h4 {
+    width: 280px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .inputWrapp h4 {
+    width: 290px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .inputWrapp h4 {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  select {
+    width: 260px;
+    margin-left: 3%;
+  }
+}
+
+.nextBtn {
+  padding-top: 0px;
+  background: #343a40;
+  color: white;
+  height: 40px;
+  margin-top: 10%;
+  text-align: center;
+  border-radius: 3px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 320px) {
+  .nextBtn {
+    width: 40%;
+    margin-top: 14%;
+    margin-bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .nextBtn {
+    width: 40%;
+    margin-top: 14%;
+    margin-bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .nextBtn {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=input.css.map */

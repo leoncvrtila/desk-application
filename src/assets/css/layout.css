@@ -1,0 +1,107 @@
+/*-----------------RESPONSIVE*/
+/*-----------------LAYOUT*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #f6f7f9;
+}
+
+section {
+  width: 100%;
+  background: #f6f7f9;
+}
+
+footer {
+  text-align: -webkit-center;
+  margin: 10%;
+}
+
+.Success {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.Success a {
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.Success a:active, .Success a:link, .Success a:visited {
+  color: #333333;
+}
+
+.Success a:hover {
+  color: #4f575f;
+}
+
+.Success h3 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.Success img {
+  height: 150px;
+}
+
+@media only screen and (max-width: 425px) {
+  .Success p {
+    margin: 4%;
+    line-height: 25px;
+  }
+}
+
+/*-----------------------SCROLL*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #343a40;
+}
+
+@media only screen and (max-width: 425px) {
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #8e8e8e;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  ::-webkit-scrollbar-thumb {
+    background: #8e8e8e;
+  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4f575f;
+}
+/*# sourceMappingURL=layout.css.map */
